@@ -1,0 +1,636 @@
+WindowManager:
+    MainWindow:
+    SecondWindow:
+    ThirdWindow:
+    FourthWindow:
+    TigerWindow:
+    WolfWindow:
+    ParrotWindow:
+    SharkWindow:
+
+  
+<MainWindow>:
+    name: "Home"
+    canvas.before:
+        Color:
+            rgba:(1,.55,0,1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    BoxLayout:
+        padding:250
+        pos: 305, -55
+        Image:
+            source: 'tiger1.jpg'
+    BoxLayout:
+        padding:250
+        pos: -350, -55
+        Image:
+            source: 'Wolf1.jpg'
+    BoxLayout:
+        padding:250
+        pos: -350, 180
+        Image:
+            source: 'Parrot1.jpg'
+    BoxLayout:
+        padding:250
+        pos: 350, 180
+        Image:
+            source: 'Shark1.jpg'
+    
+    Label:
+        text: "There are many species of animals in the world such as cats,dogs,fish etc but did you know that some of your favorite animals are considered an endangered species. To name a few tigers,wolves, sharks and parrots are all endangered. Endangered species are species of animals that are in risk of extinction. This is mostly due to lost of habitats, climate change and even humans. You can vist our about page to learn the behind the scenes of the app. You can learn more about endangered species by clicking the button by the animal. You can also check out the amazing sites that helped us get this information at the Sites page. You can help save these poor animals by donating at the donate page." 
+        font_size: 12
+        text_size: 500,1000
+        halign: 'left'
+        valign: 'middle'
+        
+        pos: 1,100
+    Label:
+        text: "Endangered Species" 
+        font_size: 24
+        text_size: 500,1000
+        halign: 'left'
+        valign: 'middle'
+        
+        pos: 1,200
+    Button:
+        text: "Home"
+        background_color: 0, 0, 1, 1
+        size_hint: 0.25, 0.15
+        pos: 0,527
+        on_release:
+            app.root.current = "Home"
+
+    Button:
+        text: "Sites"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint: 0.25, 0.15
+        pos: 198,527 
+        on_release:
+            app.root.current = "Sites"
+
+    Button:
+        text: "About Us"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint: 0.25, 0.15
+        pos: 389, 527
+        on_release:
+            app.root.current = "About Us"
+
+    Button:
+        text: "Donate"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint: 0.3, 0.15
+        pos: 578, 527
+        on_release:
+            app.root.current = "Donate"
+
+    Button:
+        text: "Tiger"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint: 0.25, 0.15
+        pos: 416, 200
+        on_release:
+            app.root.current = "Tigers"
+    Button:
+        text: "Wolf"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint: 0.25, 0.15
+        pos: 116, 200
+        on_release:
+            app.root.current = "Wolf"
+    Button:
+        text: "Parrot"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint: 0.13, 0.15
+        pos: 0,340 
+        on_release:
+            app.root.current = "Parrot"
+    Button:
+        text: "Shark"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint: 0.13, 0.15
+        pos: 700,340 
+        on_release:
+            app.root.current = "Shark"
+
+<SecondWindow>:
+    name: "Sites"
+    canvas.before:
+        Color:
+            rgba:(1,.55,0,1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    Label:
+        
+        text: "savetigersaveecosystem, tigersincrisis, study.com, NRDC, defenders.org,europa.eu,seethewild.org and www.fws.gov are the sites I used to learn more info on the animals" 
+        font_size: 20
+        text_size: 500,1000
+        halign: 'left'
+        valign: 'middle'
+        
+        pos: 1,100 
+        
+
+    Button:
+        text: "Home"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint:  0.25, 0.15
+        pos: 0,527
+        on_release:
+            app.root.current = "Home"
+  
+    Button:
+        text: "Sites"
+        background_color: 0, 0, 1, 1
+        size_hint:  0.25, 0.15
+        pos: 198,527
+        on_release:
+            app.root.current = "Sites"
+
+
+    Button:
+        text: "About Us"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint:  0.25, 0.15
+        pos: 389, 527
+        on_release:
+            app.root.current = "About Us"
+
+  
+    Button:
+        text: "Donate"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint:  0.3, 0.15
+        pos: 578, 527
+        on_release:
+            app.root.current = "Donate"
+
+
+<ThirdWindow>:
+    name: "About Us"
+    canvas.before:
+        Color:
+            rgba:(1,.55,0,1)
+        Rectangle:
+            pos: self.pos
+            size: self.size 
+               
+    Label:
+        
+        text: "Our mission is to spread knowledge about endangered animals and why we should save them. If you have any questions, concerns or ideas please email me at tigerbrady33@gmail.com. I hope after visting this website that you get to know much more about endangered species.   " 
+        font_size: 20
+        text_size: 500,1000
+        halign: 'left'
+        valign: 'middle'
+        
+        pos: 1,100 
+
+
+    Button:
+        text: "Home"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint: 0.25, 0.15
+        pos: 0,527
+        on_release:
+            app.root.current = "Home"
+  
+    Button:
+        text: "Sites"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint: 0.25, 0.15
+        pos: 198,527
+        on_release:
+            app.root.current = "Sites"
+
+
+    Button:
+        text: "About Us"
+        background_color: 0, 0, 1, 1
+        size_hint: 0.25, 0.15
+        pos: 389, 527
+        on_release:
+            app.root.current = "About Us"
+
+  
+    Button:
+        text: "Donate"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint: 0.3, 0.15
+        pos: 578, 527
+        on_release:
+            app.root.current = "Donate"
+
+<FourthWindow>:
+    name: "Donate"
+    canvas.before:
+        Color:
+            rgba:(1,.55,0,1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    BoxLayout:
+         
+        padding:250
+        pos: -300, 50
+        
+        Image:
+            source: 'aspca.jpeg'
+            allow_stretch: False
+            keep_ratio:False
+            
+           
+    BoxLayout:
+         
+        padding:250
+        pos: 300, 50
+        
+        Image:
+            source: 'WWF.png'
+            allow_stretch: False
+            keep_ratio:False
+                  
+
+    Label:
+        
+        text: "ASPCA, Misson:The ASPCA's mission as stated by founder Henry Bergh in 1866 is to provide effective means for the prevention of cruelty to animals throughout the United States."
+        font_size: 12
+        text_size: 300,1000
+        halign: 'left'
+        valign: 'middle'
+        
+        pos: -245,-50
+    
+    Label:
+        
+        text: "WWF, Misson: is to conserve nature and reduce the most pressing threats to the diversity of life on earth"
+        font_size: 12
+        text_size: 300,1000
+        halign: 'left'
+        valign: 'middle'
+        
+        pos: 245,-50
+
+    Button:
+        text: "Home"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint: 0.25, 0.15
+        pos: 0,527
+        on_release:
+            app.root.current = "Home"
+  
+    Button:
+        text: "Sites"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint: 0.25, 0.15
+        pos: 198,527
+        on_release:
+            app.root.current = "Sites"
+
+
+    Button:
+        text: "About Us"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint: 0.25, 0.15
+        pos: 389, 527
+        on_release:
+            app.root.current = "About Us"
+
+    Button:
+        text: "Donate"
+        background_color: 0, 0, 1, 1
+        size_hint: 0.3, 0.15
+        pos: 578, 527
+        on_release:
+            app.root.current = "Donate"
+
+
+
+<TigerWindow>:
+    name: "Tigers"
+    canvas.before:
+        Color:
+            rgba:(1,.55,0,1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    
+    BoxLayout:
+         
+        padding:250
+        pos: 325, -50
+        
+        Image:
+            source: 'tiger2.jpg'
+            allow_stretch: False
+            keep_ratio:False
+
+    BoxLayout:
+         
+        padding:250
+        pos: -325, -50
+        
+        Image:
+            source: 'tiger3.jpg'
+            allow_stretch: False
+            keep_ratio:False
+
+    Label:
+        
+        text: "Tigers are an endangered species that became endangered due to poaching habitat loss and fragmentation.  The reason why we should save these majestic creatures is because they conserve the wilderness ecosystem. " 
+        font_size: 20
+        text_size: 500,1000
+        halign: 'left'
+        valign: 'middle'
+        
+        pos: 1,100 
+    Label:
+        text: "Tigers" 
+        font_size: 24
+        text_size: 500,1000
+        halign: 'left'
+        valign: 'middle' 
+        pos: 1,200      
+
+    Button:
+        text: "Home"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint:  0.25, 0.15
+        pos: 0,527
+        on_release:
+            app.root.current = "Home"
+  
+    Button:
+        text: "Sites"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint:  0.25, 0.15
+        pos: 198,527
+        on_release:
+            app.root.current = "Sites"
+
+
+    Button:
+        text: "About Us"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint:  0.25, 0.15
+        pos: 389, 527
+        on_release:
+            app.root.current = "About Us"
+
+  
+    Button:
+        text: "Donate"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint:  0.3, 0.15
+        pos: 578, 527
+        on_release:
+            app.root.current = "Donate"
+
+
+<WolfWindow>:
+    name: "Wolf"
+    canvas.before:
+        Color:
+            rgba:(1,.55,0,1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    
+    BoxLayout:
+         
+        padding:250
+        pos: 325, -50
+        
+        Image:
+            source: 'Wolf2.jpg'
+            allow_stretch: False
+            keep_ratio:False
+
+    BoxLayout:
+         
+        padding:250
+        pos: -325, -50
+        
+        Image:
+            source: 'Wolf3.jpg'
+            allow_stretch: False
+            keep_ratio:False
+
+    Label:
+        
+        text: "Wolves are majestic creatures. They are endangered becuase people hunted them like pests and took there land. We have to save the wolfs because if we don't then it would the prey that they eat would over grow in population and then they would eat all the plants and everyone will go extinct. " 
+        font_size: 20
+        text_size: 500,1000
+        halign: 'left'
+        valign: 'middle'
+        
+        pos: 1,100 
+
+    Label:
+        text: "Wolf" 
+        font_size: 24
+        text_size: 500,1000
+        halign: 'left'
+        valign: 'middle'
+        pos: 1,200
+        
+
+    Button:
+        text: "Home"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint:  0.25, 0.15
+        pos: 0,527
+        on_release:
+            app.root.current = "Home"
+  
+    Button:
+        text: "Sites"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint:  0.25, 0.15
+        pos: 198,527
+        on_release:
+            app.root.current = "Sites"
+
+
+    Button:
+        text: "About Us"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint:  0.25, 0.15
+        pos: 389, 527
+        on_release:
+            app.root.current = "About Us"
+
+  
+    Button:
+        text: "Donate"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint:  0.3, 0.15
+        pos: 578, 527
+        on_release:
+            app.root.current = "Donate"
+
+
+
+
+<ParrotWindow>:
+    name: "Parrot"
+    canvas.before:
+        Color:
+            rgba:(1,.55,0,1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    
+    BoxLayout:
+         
+        padding:200
+        pos: 325, -50
+        
+        Image:
+            source: 'Parrot2.jpg'
+            allow_stretch: False
+            keep_ratio:False
+
+    BoxLayout:
+         
+        padding:250
+        pos: -325, -50
+        
+        Image:
+            source: 'Parrot3.jpg'
+            allow_stretch: False
+            keep_ratio:False
+
+    Label:
+        
+        text: "Parrots are majestic creatures that soar the sky. They are endangered becuase of habbtat loss and climate change. We have to save the Parrots because keep the climate stable, oxygenate air and transform pollutants into nutrients. " 
+        font_size: 20
+        text_size: 500,1000
+        halign: 'left'
+        valign: 'middle'
+        
+        pos: 1,100 
+        
+    Label:
+        text: "Parrot" 
+        font_size: 24
+        text_size: 500,1000
+        halign: 'left'
+        valign: 'middle'
+        pos: 1,200
+    Button:
+        text: "Home"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint:  0.25, 0.15
+        pos: 0,527
+        on_release:
+            app.root.current = "Home"
+  
+    Button:
+        text: "Sites"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint:  0.25, 0.15
+        pos: 198,527
+        on_release:
+            app.root.current = "Sites"
+
+
+    Button:
+        text: "About Us"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint:  0.25, 0.15
+        pos: 389, 527
+        on_release:
+            app.root.current = "About Us"
+
+  
+    Button:
+        text: "Donate"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint:  0.3, 0.15
+        pos: 578, 527
+        on_release:
+            app.root.current = "Donate"
+
+
+<SharkWindow>:
+    name: "Shark"
+    canvas.before:
+        Color:
+            rgba:(1,.55,0,1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    
+    BoxLayout:
+         
+        padding:250
+        pos: 325, -50
+        
+        Image:
+            source: 'Shark2.jpg'
+            allow_stretch: False
+            keep_ratio:False
+
+    BoxLayout:
+         
+        padding:250
+        pos: -325, -50
+        
+        Image:
+            source: 'Shark3.jpg'
+            allow_stretch: False
+            keep_ratio:False
+
+    Label:
+        
+        text: "Sharks are majestic creatures that rule the ocean. They are endangered becuase of human impacts. We have to save Sharks because they play a huge rule in a healthy ocean ecosystems and they prevent algae overgrowth that advances the decline of coral reefs. " 
+        font_size: 20
+        text_size: 500,1000
+        halign: 'left'
+        valign: 'middle'
+        
+        pos: 1,100 
+        
+    Label:
+        text: "Shark" 
+        font_size: 24
+        text_size: 500,1000
+        halign: 'left'
+        valign: 'middle'
+        pos: 1,200
+    Button:
+        text: "Home"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint:  0.25, 0.15
+        pos: 0,527
+        on_release:
+            app.root.current = "Home"
+  
+    Button:
+        text: "Sites"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint:  0.25, 0.15
+        pos: 198,527
+        on_release:
+            app.root.current = "Sites"
+
+
+    Button:
+        text: "About Us "
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint:  0.25, 0.15
+        pos: 389, 527
+        on_release:
+            app.root.current = "About Us"
+
+  
+    Button:
+        text: "Donate"
+        background_color: 0.4, 0.5, 0.6, 1
+        size_hint:  0.3, 0.15
+        pos: 578, 527
+        on_release:
+            app.root.current = "Donate"

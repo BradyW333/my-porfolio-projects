@@ -1,0 +1,40 @@
+h1{
+  text-align :center;
+  color:blue;
+  font-weight: bold;
+  background: rgba(0, 255, 68, 0.6);
+  width:500px;
+  margin: 0 auto;
+}
+.catclass{
+  height:100px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+body{
+  background-image: url("https://m.outdoorrevival.com/wp-content/uploads/2017/04/the-1865639_1280.jpg")
+}
+
+a{
+  color:blue;
+  font-weight: bold;
+}
+
+#container{
+   background: rgba(0, 255, 68, 0.6);
+   margin: 0 auto;
+   width: 370px;
+   text-align :center;
+}
+.cat2class{
+  width:300px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.facts{
+  font-size:15pt;
+}

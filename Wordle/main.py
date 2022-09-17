@@ -82,4 +82,4 @@ while guess_number < lives:
     print("You win")
     break
 if guess != secretWord:
-  print("The wordle was " + secretWord + ". You lose you are so bad at this game hahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahaha")
+  print("The wordle was " + secretWord + ". You lose")
